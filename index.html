@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Luiz, desenvolvedor full stack focado em interfaces modernas, APIs e experiências digitais."
+    />
+    <title>Luiz | Desenvolvedor Full Stack</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-home" viewBox="0 0 24 24">
+        <path d="M3 10.7 12 3l9 7.7v9a1.3 1.3 0 0 1-1.3 1.3h-5.2v-6h-5v6H4.3A1.3 1.3 0 0 1 3 19.7v-9Z" />
+      </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm8 9a8 8 0 1 0-16 0h16Z" />
+      </symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24">
+        <path d="m8.5 16.6-5-4.6 5-4.6 1.6 1.8L7 12l3.1 2.8-1.6 1.8Zm7 0-1.6-1.8L17 12l-3.1-2.8 1.6-1.8 5 4.6-5 4.6ZM11.1 20 9 19.3 12.9 4l2.1.7L11.1 20Z" />
+      </symbol>
+      <symbol id="icon-folder" viewBox="0 0 24 24">
+        <path d="M3 6.4A2.4 2.4 0 0 1 5.4 4h5l2 2.4h6.2A2.4 2.4 0 0 1 21 8.8v8.8a2.4 2.4 0 0 1-2.4 2.4H5.4A2.4 2.4 0 0 1 3 17.6V6.4Z" />
+      </symbol>
+      <symbol id="icon-briefcase" viewBox="0 0 24 24">
+        <path d="M9 5a3 3 0 0 1 6 0v1h3.5A2.5 2.5 0 0 1 21 8.5v8A2.5 2.5 0 0 1 18.5 19h-13A2.5 2.5 0 0 1 3 16.5v-8A2.5 2.5 0 0 1 5.5 6H9V5Zm2 1h2V5a1 1 0 1 0-2 0v1Zm10 5.5V9.7a2 2 0 0 1-1 .3h-5v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1H4a2 2 0 0 1-1-.3v1.8h18Z" />
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <path d="M4.5 5h15A2.5 2.5 0 0 1 22 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 16.5v-9A2.5 2.5 0 0 1 4.5 5Zm.2 2 7.3 5.2L19.3 7H4.7Zm15.3 2.3-7.4 5.2a1 1 0 0 1-1.2 0L4 9.3v7.2c0 .3.2.5.5.5h15c.3 0 .5-.2.5-.5V9.3Z" />
+      </symbol>
+      <symbol id="icon-download" viewBox="0 0 24 24">
+        <path d="M11 4h2v8.2l3-3 1.4 1.4L12 16l-5.4-5.4L8 9.2l3 3V4ZM5 18h14v2H5v-2Z" />
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path d="M12 .8a11.2 11.2 0 0 0-3.5 21.9c.6.1.8-.2.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.8.1-.8 1.2.1 1.9 1.3 1.9 1.3 1.1 1.9 2.9 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.3-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.8 11.8 0 0 1 6.2 0c2.4-1.6 3.4-1.2 3.4-1.2.6 1.6.2 2.9.1 3.2.8.9 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.2 11.2 0 0 0 12 .8Z" />
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path d="M5.1 8.5H1.8V22h3.3V8.5ZM3.4 2a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8Zm18.8 12.3c0-3.6-1.9-6-5-6a4.3 4.3 0 0 0-3.8 2V8.5h-3.3V22h3.3v-7c0-2.1 1.1-3.4 2.8-3.4 1.6 0 2.6 1.1 2.6 3.2V22h3.4v-7.7Z" />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="m13.7 5.3 5.7 5.7c.4.4.4 1 0 1.4l-5.7 5.7-1.4-1.4 4-4H4v-2h12.3l-4-4 1.4-1.4Z" />
+      </symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24">
+        <path d="M4 6h16v2H4V6Zm0 5h16v2H4v-2Zm0 5h16v2H4v-2Z" />
+      </symbol>
+      <symbol id="icon-x" viewBox="0 0 24 24">
+        <path d="m6.4 5 5.6 5.6L17.6 5 19 6.4 13.4 12l5.6 5.6-1.4 1.4-5.6-5.6L6.4 19 5 17.6l5.6-5.6L5 6.4 6.4 5Z" />
+      </symbol>
+    </svg>
+
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar" aria-label="Abrir menu">
+      <svg><use href="#icon-menu" /></svg>
+    </button>
+
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#inicio" aria-label="Início">
+        <span>&lt;/&gt;</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="nav-link active" href="#inicio">
+          <svg><use href="#icon-home" /></svg>
+          <span>Início</span>
+        </a>
+        <a class="nav-link" href="#sobre">
+          <svg><use href="#icon-user" /></svg>
+          <span>Sobre mim</span>
+        </a>
+        <a class="nav-link" href="#skills">
+          <svg><use href="#icon-code" /></svg>
+          <span>Skills</span>
+        </a>
+        <a class="nav-link" href="#projetos">
+          <svg><use href="#icon-folder" /></svg>
+          <span>Projetos</span>
+        </a>
+        <a class="nav-link" href="#experiencia">
+          <svg><use href="#icon-briefcase" /></svg>
+          <span>Experiência</span>
+        </a>
+        <a class="nav-link" href="#contato">
+          <svg><use href="#icon-mail" /></svg>
+          <span>Contato</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="socials" aria-label="Redes sociais">
+          <a href="https://github.com/seu-usuario" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg><use href="#icon-github" /></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg><use href="#icon-linkedin" /></svg>
+          </a>
+          <a href="mailto:seuemail@email.com" aria-label="E-mail">
+            <svg><use href="#icon-mail" /></svg>
+          </a>
+        </div>
+        <p>&copy; <span id="currentYear">2026</span> Luiz</p>
+        <p>Feito com código e café</p>
+      </div>
+    </aside>
+
+    <main class="page" id="conteudo">
+      <section class="hero section" id="inicio" aria-labelledby="hero-title">
+        <div class="grid-glow" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Olá, eu sou</p>
+          <h1 id="hero-title">Luiz<span class="cursor" aria-hidden="true"></span></h1>
+          <h2>Desenvolvedor Full Stack</h2>
+          <p class="lead">
+            Crio aplicações web modernas, responsivas e focadas em performance,
+            usabilidade e código limpo.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projetos">
+              <svg><use href="#icon-folder" /></svg>
+              Ver projetos
+            </a>
+            <a class="btn btn-secondary" href="assets/curriculo-luiz.pdf" download>
+              <svg><use href="#icon-download" /></svg>
+              Baixar CV
+            </a>
+          </div>
+          <pre class="code-line" aria-label="Frase de destaque"><code><span>const</span> objetivo = <strong>'transformar ideias em produtos digitais';</strong></code></pre>
+        </div>
+
+        <div class="hero-visual reveal" style="--delay: 120ms">
+          <figure class="portrait-frame">
+            <img src="assets/hero-developer.png" alt="Ilustração de desenvolvedor com interface futurista" />
+          </figure>
+          <div class="float-card code-badge" aria-hidden="true">&lt;/&gt;</div>
+          <div class="float-card terminal-card" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <div></div><div></div><div></div><div></div>
+          </div>
+          <div class="float-card prompt-badge" aria-hidden="true">&gt;_</div>
+        </div>
+      </section>
+
+      <section class="section about-band" id="sobre" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <span></span>
+          <h2 id="about-title">Sobre mim</h2>
+        </div>
+        <div class="about-content reveal">
+          <p>
+            Sou um desenvolvedor em evolução constante, apaixonado por transformar
+            ideias em interfaces funcionais. Gosto de construir experiências
+            digitais bem acabadas, com atenção a detalhes, acessibilidade e
+            manutenção do código.
+          </p>
+          <div class="stats" aria-label="Resumo profissional">
+            <div>
+              <strong>12+</strong>
+              <span>projetos</span>
+            </div>
+            <div>
+              <strong>8</strong>
+              <span>tecnologias</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>dedicação</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-grid section" aria-label="Skills e projetos">
+        <div class="skills-panel reveal" id="skills">
+          <div class="section-heading">
+            <span></span>
+            <h2>Minhas Skills</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill html"><strong>HTML</strong><span>5</span></div>
+            <div class="skill css"><strong>CSS</strong><span>3</span></div>
+            <div class="skill js"><strong>JavaScript</strong><span>JS</span></div>
+            <div class="skill ts"><strong>TypeScript</strong><span>TS</span></div>
+            <div class="skill react"><strong>React</strong><span>RX</span></div>
+            <div class="skill next"><strong>Next.js</strong><span>N</span></div>
+            <div class="skill node"><strong>Node.js</strong><span>NJ</span></div>
+            <div class="skill tailwind"><strong>Tailwind</strong><span>~</span></div>
+            <div class="skill git"><strong>Git</strong><span>GT</span></div>
+            <div class="skill github"><strong>GitHub</strong><span>GH</span></div>
+            <div class="skill docker"><strong>Docker</strong><span>DK</span></div>
+            <div class="skill sql"><strong>PostgreSQL</strong><span>SQL</span></div>
+          </div>
+          <div class="progress-row">
+            <div class="trophy" aria-hidden="true">XP</div>
+            <div>
+              <p>Sempre aprendendo e evoluindo</p>
+              <div class="progress"><span></span></div>
+            </div>
+            <strong>90%</strong>
+          </div>
+        </div>
+
+        <div class="projects-area" id="projetos">
+          <div class="section-heading reveal">
+            <span></span>
+            <h2>Projetos em destaque</h2>
+            <a href="https://github.com/seu-usuario" target="_blank" rel="noreferrer">
+              Ver todos
+              <svg><use href="#icon-arrow" /></svg>
+            </a>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-shot dashboard" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <h3>DevTasks</h3>
+              <p>Aplicação de gerenciamento de tarefas com filtros, dashboard e produtividade diária.</p>
+              <div class="tags">
+                <span>Next.js</span><span>TypeScript</span><span>Tailwind</span>
+              </div>
+              <a href="https://github.com/seu-usuario/devtasks" target="_blank" rel="noreferrer">
+                <svg><use href="#icon-github" /></svg>
+                Ver no GitHub
+                <svg><use href="#icon-arrow" /></svg>
+              </a>
+            </article>
+
+            <article class="project-card reveal" style="--delay: 90ms">
+              <div class="project-shot finance" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <h3>FinTrack</h3>
+              <p>Dashboard financeiro para acompanhar despesas, investimentos e metas mensais.</p>
+              <div class="tags">
+                <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+              </div>
+              <a href="https://github.com/seu-usuario/fintrack" target="_blank" rel="noreferrer">
+                <svg><use href="#icon-github" /></svg>
+                Ver no GitHub
+                <svg><use href="#icon-arrow" /></svg>
+              </a>
+            </article>
+
+            <article class="project-card reveal" style="--delay: 180ms">
+              <div class="project-shot store" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <h3>TechStore</h3>
+              <p>E-commerce moderno com carrinho, pagamentos e autenticação de usuários.</p>
+              <div class="tags">
+                <span>Next.js</span><span>Stripe</span><span>Tailwind</span>
+              </div>
+              <a href="https://github.com/seu-usuario/techstore" target="_blank" rel="noreferrer">
+                <svg><use href="#icon-github" /></svg>
+                Ver no GitHub
+                <svg><use href="#icon-arrow" /></svg>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-band" id="experiencia" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <span></span>
+          <h2 id="experience-title">Experiência</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <time>2025 - atual</time>
+            <h3>Desenvolvedor Full Stack</h3>
+            <p>Criação de aplicações web, integrações com APIs e interfaces responsivas com foco em performance.</p>
+          </article>
+          <article class="timeline-item reveal" style="--delay: 90ms">
+            <time>2024 - 2025</time>
+            <h3>Projetos pessoais e estudos</h3>
+            <p>Construção de projetos práticos com React, Node.js, bancos de dados e boas práticas de Git.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-band" id="contato" aria-labelledby="contact-title">
+        <div class="section-heading reveal">
+          <span></span>
+          <h2 id="contact-title">Contato</h2>
+        </div>
+        <div class="contact-content reveal">
+          <p>Vamos conversar sobre ideias, projetos ou oportunidades.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:seuemail@email.com">
+              <svg><use href="#icon-mail" /></svg>
+              Enviar e-mail
+            </a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noreferrer">
+              <svg><use href="#icon-linkedin" /></svg>
+              LinkedIn
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/seu-usuario" target="_blank" rel="noreferrer">
+              <svg><use href="#icon-github" /></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
