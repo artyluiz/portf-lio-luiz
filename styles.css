@@ -315,6 +315,17 @@ p {
   line-height: 1.15;
 }
 
+.hero-role {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.hero-role small {
+  color: #dbe7ff;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 750;
+}
+
 .lead {
   max-width: 34rem;
   margin: 0;
@@ -624,14 +635,14 @@ p {
 .skill.html span { background: #ff6b35; }
 .skill.css span { background: #3b82f6; }
 .skill.js span { background: var(--amber); }
-.skill.ts span { background: #60a5fa; }
-.skill.react span { background: #1fe3ff; }
-.skill.next span { background: #f5f7fb; }
-.skill.node span { background: #42d76a; }
-.skill.tailwind span { background: #5eead4; }
-.skill.git span { background: #fb6242; }
+.skill.python span { background: linear-gradient(135deg, #4b8bbe, #ffd43b); }
+.skill.powerbi span { background: #f2c811; }
+.skill.excel span { background: #21a366; }
+.skill.pandas span { background: #e5e7eb; }
+.skill.numpy span { background: #4dabcf; }
+.skill.charts span { background: #c084fc; }
+.skill.api span { background: #22d3ee; }
 .skill.github span { background: #f8fafc; }
-.skill.docker span { background: #38bdf8; }
 .skill.sql span { background: #c4b5fd; }
 
 .progress-row {
